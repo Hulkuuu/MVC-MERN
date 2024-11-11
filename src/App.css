@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+
+/* Reset margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Gill Sans MT';
+  background-color: #111111;  /* Background color */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center; /* Center text inside the container */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Container to hold the input boxes and button */
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center input fields and buttons */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px; /* Space between input fields and button */
+  width: 100%;
+}
+
+/* Flex container for the input boxes */
+.inputs-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;  /* Spacing between input boxes */
+  margin-bottom: 20px;
+}
+
+/* Individual input box styling */
+.input-box {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* Styling for input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #333;
+  border: 1px solid #ccc;
   color: white;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.input-field:focus {
+  background-color: #444;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gill Sans MT', sans-serif;
+  font-size: 30px;  /* Increase font size */
+  letter-spacing: 1.5px;  /* Add spacing between letters */
+  color: white;  /* Ensure text color matches the rest of the body */
 }
