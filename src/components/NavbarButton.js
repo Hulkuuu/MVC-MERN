@@ -12,6 +12,9 @@ const NavbarButton = () => {
         <Link to="/faculty" className="button">
           <span className="button-text">Faculty</span>
         </Link>
+        <Link to="/upload" className="button"> {/* New Upload Button */}
+          <span className="button-text">Upload</span>
+        </Link>
         <Link to="/about-me" className="button">
           <span className="button-text">About Me</span>
         </Link>
@@ -21,16 +24,16 @@ const NavbarButton = () => {
 };
 
 const StyledWrapper = styled.div`
-  position: absolute; /* To adjust the position relative to the page */
-  top: 70px; /* Slightly from the top */
+  position: absolute;
+  top: 70px;
   left: 50%;
-  transform: translateX(-50%); /* Center the navbar horizontally */
-
+  transform: translateX(-50%);
+  
   .button-container {
     display: flex;
     background-color: black;
-    width: 300px;
-    height: 60px;  /* Adjusted for better balance */
+    width: 400px; /* Increased width for the extra button */
+    height: 60px;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
@@ -39,8 +42,8 @@ const StyledWrapper = styled.div`
   .button {
     outline: 0 !important;
     border: 0 !important;
-    width: 90px;  /* Adjusted size */
-    height: 50px; /* Adjusted size */
+    width: 90px;
+    height: 50px;
     border-radius: 10px;
     background-color: transparent;
     display: flex;
@@ -54,11 +57,11 @@ const StyledWrapper = styled.div`
 
   .button:hover {
     transform: translateY(-3px);
-    background-color: #333; /* Add background color on hover */
+    background-color: #333;
   }
 
   .button-text {
-    font-size: 16px; /* Adjust text size */
+    font-size: 16px;
   }
 `;
 
